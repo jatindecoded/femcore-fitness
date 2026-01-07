@@ -9,12 +9,12 @@ import { DashedLine } from "@/components/dashed-line";
 
 const contactInfo = [
   {
-    title: "Corporate office",
+    title: "Our Location",
     content: (
       <p className="text-muted-foreground mt-3">
-        1 Carlsberg Close
-        <br />
-        1260 Hillview, Australia
+        FemCORE Fitness<br />
+        A-123, Vikaspuri<br />
+        New Delhi, 110018
       </p>
     ),
   },
@@ -23,21 +23,21 @@ const contactInfo = [
     content: (
       <div className="mt-3">
         <div>
-          <p className="">Careers</p>
+          <p className="">General Inquiries</p>
           <Link
-            href="mailto:careers@example.com"
+            href="mailto:info@femcore.in"
             className="text-muted-foreground hover:text-foreground"
           >
-            careers@example.com
+            info@femcore.in
           </Link>
         </div>
         <div className="mt-1">
-          <p className="">Press</p>
+          <p className="">Support</p>
           <Link
-            href="mailto:press@example.com"
+            href="mailto:support@femcore.in"
             className="text-muted-foreground hover:text-foreground"
           >
-            press@example.com
+            support@femcore.in
           </Link>
         </div>
       </div>
@@ -69,10 +69,10 @@ export default function Contact() {
     <section className="py-28 lg:py-32 lg:pt-44">
       <div className="container max-w-2xl">
         <h1 className="text-center text-2xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
-          Contact us
+          Contact FemCORE Fitness
         </h1>
         <p className="text-muted-foreground mt-4 text-center leading-snug font-medium lg:mx-auto">
-          Hopefully this form gets through our spam filters.
+          We’re here to support and empower you! Reach out with any questions about memberships, classes, or our community.
         </p>
 
         <div className="mt-10 flex justify-between gap-8 max-sm:flex-col md:mt-14 lg:mt-20 lg:gap-12">

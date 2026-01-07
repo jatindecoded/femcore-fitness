@@ -11,40 +11,39 @@ import { cn } from "@/lib/utils";
 
 const plans = [
   {
-    name: "Free",
-    monthlyPrice: "$0",
-    yearlyPrice: "$0",
-    description: "Free for everyone",
+    name: "Basic",
+    monthlyPrice: "₹1,499",
+    yearlyPrice: "₹15,999",
+    description: "Perfect for beginners",
     features: [
-      "Unlimited members",
-      "2 teams",
-      "500 issues",
-      "Slack and Github integrations",
+      "Access to gym floor",
+      "Women-only group classes",
+      "Locker & shower facilities",
+      "Community events",
     ],
   },
   {
-    name: "Startup",
-    monthlyPrice: "$8",
-    yearlyPrice: "$6",
+    name: "Standard",
+    monthlyPrice: "₹2,499",
+    yearlyPrice: "₹25,999",
+    description: "Most popular",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Unlimited teams",
-      "Unlimited issues and file uploads",
-      "Mainline Insights",
-      "Admin roles",
+      "All Basic features",
+      "Personalized fitness plan",
+      "Unlimited group classes",
+      "Guest pass (2/month)",
     ],
   },
   {
-    name: "Enterprise",
-    monthlyPrice: "$8",
-    yearlyPrice: "$6",
+    name: "Premium",
+    monthlyPrice: "₹3,499",
+    yearlyPrice: "₹34,999",
+    description: "For the dedicated",
     features: [
-      "All free plan features and...",
-      "Mainline AI",
-      "Supermainline AGI",
-      "Free daily catered lunch",
-      "random HIPPA audits",
+      "All Standard features",
+      "1-on-1 personal training (4/month)",
+      "Nutrition counseling",
+      "Priority support",
     ],
   },
 ];
@@ -57,12 +56,10 @@ export const Pricing = ({ className }: { className?: string }) => {
       <div className="container max-w-5xl">
         <div className="space-y-4 text-center">
           <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-            Pricing
+            Membership Plans
           </h2>
           <p className="text-muted-foreground mx-auto max-w-xl leading-snug text-balance">
-            Use Mainline for free with your whole team. Upgrade to enable
-            unlimited issues, enhanced security controls, and additional
-            features.
+            Choose the perfect plan for your fitness journey. All memberships are for women only and include access to our safe, modern facilities in Vikaspuri.
           </p>
         </div>
 
@@ -70,11 +67,10 @@ export const Pricing = ({ className }: { className?: string }) => {
           {plans.map((plan) => (
             <Card
               key={plan.name}
-              className={`${
-                plan.name === "Startup"
+              className={`${plan.name === "Startup"
                   ? "outline-primary origin-top outline-4"
                   : ""
-              }`}
+                }`}
             >
               <CardContent className="flex flex-col gap-7 px-6 py-5">
                 <div className="space-y-2">
@@ -82,12 +78,9 @@ export const Pricing = ({ className }: { className?: string }) => {
                   <div className="space-y-1">
                     <div className="text-muted-foreground text-lg font-medium">
                       {isAnnual ? plan.yearlyPrice : plan.monthlyPrice}{" "}
-                      {plan.name !== "Free" && (
-                        <span className="text-muted-foreground">
-                          per user/
-                          {isAnnual ? "year" : "month"}
-                        </span>
-                      )}
+                      <span className="text-muted-foreground">
+                        {isAnnual ? "per year" : "per month"}
+                      </span>
                     </div>
                   </div>
                 </div>

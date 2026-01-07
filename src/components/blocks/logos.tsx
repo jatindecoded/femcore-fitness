@@ -85,28 +85,13 @@ export const Logos = () => {
 
   return (
     <section className="pb-28 lg:pb-32 overflow-hidden">
-      <div className="container space-y-10 lg:space-y-16">
-        <div className="text-center">
-          <h2 className="mb-4 text-xl text-balance md:text-2xl lg:text-3xl">
-            Powering the world's best product teams.
-            <br className="max-md:hidden" />
-            <span className="text-muted-foreground">
-              From next-gen startups to established enterprises.
-            </span>
-          </h2>
-        </div>
-
-        <div className="flex w-full flex-col items-center gap-8">
-          {/* Top row - 4 logos */}
-          <LogoRow companies={topRowCompanies} gridClassName="grid-cols-4" />
-
-          {/* Bottom row - 5 logos */}
-          <LogoRow
-            companies={bottomRowCompanies}
-            gridClassName="grid-cols-5"
-            direction="right"
-          />
-        </div>
+      <div className="container flex flex-col items-center justify-center py-12">
+        <h2 className="mb-4 text-center text-xl md:text-2xl lg:text-3xl font-bold text-primary">
+          Empowering Women. Building Community.
+        </h2>
+        <p className="text-muted-foreground text-center max-w-2xl mx-auto text-lg md:text-xl">
+          Join Vikaspuri’s premier female-only gym and discover a safe, supportive, and inspiring space designed for women to achieve their true strength—together.
+        </p>
       </div>
     </section>
   );

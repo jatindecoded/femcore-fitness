@@ -17,60 +17,53 @@ import { cn } from "@/lib/utils";
 
 const items = [
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
-    role: "PM",
-    company: "Mercury Finance",
-    image: "/testimonials/amy-chase.webp",
+    quote: "FemCORE has completely changed my outlook on fitness. The trainers are so supportive and the community feels like family!",
+    author: "Priya Sharma",
+    role: "Member",
+    company: "Vikaspuri",
+    image: "https://images.unsplash.com/photo-1660067262025-271603ac1283?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    quote: "I was able to replace 80% of my team with Mainline bots.",
-    author: "Jonas Kotara",
-    role: "Lead Engineer",
-    company: "Mercury Finance",
-    image: "/testimonials/jonas-kotara.webp",
+    quote: "I love that it's a women-only space. I feel safe, motivated, and inspired every time I walk in!",
+    author: "Aarti Singh",
+    role: "Member",
+    company: "Vikaspuri",
+    image: "https://images.unsplash.com/photo-1581564018992-95e729d4940e?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    quote: "Founder Mode is hard enough without having a really nice PM app.",
-    author: "Kevin Yam",
-    role: "Founder",
-    company: "Mercury Finance",
-    image: "/testimonials/kevin-yam.webp",
+    quote: "The personal training sessions are amazing. My coach helped me achieve goals I never thought possible!",
+    author: "Neha Verma",
+    role: "Member",
+    company: "Vikaspuri",
+    image: "https://images.unsplash.com/photo-1689580298851-d4482a124290?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    quote: "I can use the tool as a substitute from my PM.",
-    author: "Kundo Marta",
-    role: "Founder",
-    company: "Mercury Finance",
-    image: "/testimonials/kundo-marta.webp",
+    quote: "FemCORE is more than a gym—it's a sisterhood. I always leave feeling stronger and happier!",
+    author: "Simran Kaur",
+    role: "Member",
+    company: "Vikaspuri",
+    image: "https://images.unsplash.com/photo-1661436170168-7ce82d649532?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    quote: "We're misusing Mainline as a CRM and it still works!",
-    author: "Amy Chase",
-    role: "PM",
-    company: "Mercury Finance",
-    image: "/testimonials/amy-chase.webp",
+    quote: "The group classes are so energizing! I've made lifelong friends and gained so much confidence here.",
+    author: "Kavya Patel",
+    role: "Member",
+    company: "Vikaspuri",
+    image: "https://images.unsplash.com/photo-1659758591866-efe0c572615c?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    quote: "I was able to replace 80% of my team with Mainline bots.",
-    author: "Jonas Kotara",
-    role: "Lead Engineer",
-    company: "Mercury Finance",
-    image: "/testimonials/jonas-kotara.webp",
+    quote: "I never thought I'd enjoy working out until I joined FemCORE. The atmosphere is so welcoming and empowering!",
+    author: "Anjali Reddy",
+    role: "Member",
+    company: "Vikaspuri",
+    image: "https://images.unsplash.com/photo-1661875155834-d1871e603ab8?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    quote: "Founder Mode is hard enough without having a really nice PM app.",
-    author: "Kevin Yam",
-    role: "Founder",
-    company: "Mercury Finance",
-    image: "/testimonials/kevin-yam.webp",
-  },
-  {
-    quote: "I can use the tool as a substitute from my PM.",
-    author: "Kundo Marta",
-    role: "Founder",
-    company: "Mercury Finance",
-    image: "/testimonials/kundo-marta.webp",
+    quote: "Best decision I ever made! The trainers understand women's bodies and create perfect workout plans for us.",
+    author: "Meera Gupta",
+    role: "Member",
+    company: "Vikaspuri",
+    image: "https://images.unsplash.com/photo-1692992193981-d3d92fabd9cb?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -87,16 +80,11 @@ export const Testimonials = ({
         <div className="container">
           <div className="space-y-4">
             <h2 className="text-2xl tracking-tight md:text-4xl lg:text-5xl">
-              Trusted by product builders
+              Trusted by Women in Vikaspuri
             </h2>
             <p className="text-muted-foreground max-w-md leading-snug">
-              Mainline is built on the habits that make the best product teams
-              successful: staying focused, moving quickly, and always aiming for
-              high-quality work.
+              Hear from our members about how FemCORE Fitness has empowered their journeys and transformed their lives.
             </p>
-            <Button variant="outline" className="shadow-md">
-              Read our Customer Stories <ArrowRight className="size-4" />
-            </Button>
           </div>
 
           <div className="relative mt-8 -mr-[max(3rem,calc((100vw-80rem)/2+3rem))] md:mt-12 lg:mt-20">

@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils";
 
 const topItems = [
   {
-    title: "Reusable issue templates.",
+    title: "Personal Training by Female Experts",
     description:
-      "Draft lightning-fast documents with our Smart Instructions and Templates.",
+      "Achieve your goals with 1-on-1 sessions from certified female trainers who understand your needs.",
     images: [
       {
-        src: "/resource-allocation/templates.webp",
-        alt: "Issue template interface",
+        src: "https://images.unsplash.com/photo-1685811982522-46383318bc8d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        alt: "Personal Training by Female Experts interface",
         width: 495,
         height: 186,
       },
@@ -22,37 +22,15 @@ const topItems = [
     fade: [""],
   },
   {
-    title: "Simplify your stack.",
-    description: "No more Confluence, SharePoint, or Microsoft Word.",
+    title: "Safe & Modern Facilities",
+    description: "Workout in a secure, clean, and inspiring environment designed exclusively for women.",
     images: [
-      { src: "/logos/jira.svg", alt: "Jira logo", width: 48, height: 48 },
-      { src: "/logos/excel.svg", alt: "Excel logo", width: 48, height: 48 },
       {
-        src: "/logos/notion.svg",
-        alt: "Notion logo",
-        width: 48,
-        height: 48,
+        src: "https://images.unsplash.com/photo-1590556409454-198422ea5d54?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        alt: "Safe & Modern Facilities interface",
+        width: 495,
+        height: 186,
       },
-      { src: "/logos/word.svg", alt: "Word logo", width: 48, height: 48 },
-      {
-        src: "/logos/monday.svg",
-        alt: "Monday logo",
-        width: 48,
-        height: 48,
-      },
-      {
-        src: "/logos/drive.svg",
-        alt: "Google Drive logo",
-        width: 48,
-        height: 48,
-      },
-      {
-        src: "/logos/jira.svg",
-        alt: "Jira logo",
-        width: 48,
-        height: 48,
-      },
-      { src: "/logos/asana.svg", alt: "Asana logo", width: 48, height: 48 },
     ],
     className:
       "flex-1 [&>.title-container]:mb-5 md:[&>.title-container]:mb-8 md:[&>.title-container]:translate-x-2 xl:[&>.title-container]:translate-x-4 [&>.title-container]:translate-x-0",
@@ -62,15 +40,15 @@ const topItems = [
 
 const bottomItems = [
   {
-    title: "Graveyard it.",
+    title: "Group Classes for Every Woman",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.",
+      "From yoga to strength training, join a variety of classes designed for all fitness levels.",
     images: [
       {
-        src: "/resource-allocation/graveyard.webp",
-        alt: "Graveyard interface",
+        src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+        alt: "Group fitness class for women",
         width: 305,
-        height: 280,
+        height: 186,
       },
     ],
     className:
@@ -78,13 +56,13 @@ const bottomItems = [
     fade: ["bottom"],
   },
   {
-    title: "Task discussions.",
+    title: "Supportive Community",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Connect, motivate, and grow with a community of strong, inspiring women.",
     images: [
       {
-        src: "/resource-allocation/discussions.webp",
-        alt: "Task discussions interface",
+        src: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3",
+        alt: "Supportive women community",
         width: 320,
         height: 103,
       },
@@ -94,15 +72,15 @@ const bottomItems = [
     fade: [""],
   },
   {
-    title: "Notifications.",
+    title: "Wellness & Nutrition Guidance",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.",
+      "Get expert advice on nutrition and wellness tailored for women.",
     images: [
       {
-        src: "/resource-allocation/notifications.webp",
-        alt: "Notifications interface",
+        src: "https://images.unsplash.com/photo-1590556409454-198422ea5d54?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        alt: "Wellness and nutrition guidance",
         width: 305,
-        height: 280,
+        height: 186,
       },
     ],
     className:
@@ -119,7 +97,7 @@ export const ResourceAllocation = () => {
     >
       <div className="">
         <h2 className="container text-center text-3xl tracking-tight text-balance sm:text-4xl md:text-5xl lg:text-6xl">
-          Mainline your resource allocation and execution
+          Your Fitness Journey, Your Way
         </h2>
 
         <div className="mt-8 md:mt-12 lg:mt-20">
@@ -180,64 +158,21 @@ const Item = ({ item, isLast, className }: ItemProps) => {
         <span className="text-muted-foreground"> {item.description}</span>
       </div>
 
-      {item.fade.includes("bottom") && (
-        <div className="from-muted/80 absolute inset-0 z-10 bg-linear-to-t via-transparent to-transparent md:hidden" />
-      )}
-      {item.images.length > 4 ? (
-        <div className="relative overflow-hidden">
-          <div className="flex flex-col gap-5">
-            {/* First row - right aligned */}
-            <div className="flex translate-x-4 justify-end gap-5">
-              {item.images.slice(0, 4).map((image, j) => (
-                <div
-                  key={j}
-                  className="bg-background grid aspect-square size-16 place-items-center rounded-2xl p-2 lg:size-20"
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={image.width}
-                    height={image.height}
-                    className="object-contain object-left-top"
-                  />
-                  <div className="from-muted/80 absolute inset-y-0 right-0 z-10 w-16 bg-linear-to-l to-transparent" />
-                </div>
-              ))}
-            </div>
-            {/* Second row - left aligned */}
-            <div className="flex -translate-x-4 gap-5">
-              {item.images.slice(4).map((image, j) => (
-                <div
-                  key={j}
-                  className="bg-background grid aspect-square size-16 place-items-center rounded-2xl lg:size-20"
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={image.width}
-                    height={image.height}
-                    className="object-contain object-left-top"
-                  />
-                  <div className="from-muted absolute inset-y-0 bottom-0 left-0 z-10 w-14 bg-linear-to-r to-transparent" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div className="image-container grid grid-cols-1 gap-4">
-          {item.images.map((image, j) => (
+      <div className="image-container mt-6 flex flex-1 flex-col justify-center">
+        {item.images.length > 0 && (
+          <div className="relative aspect-[2/1] w-full">
             <Image
-              key={j}
-              src={image.src}
-              alt={image.alt}
-              width={image.width}
-              height={image.height}
-              className="object-contain object-left-top"
+              src={item.images[0].src}
+              alt={item.images[0].alt}
+              fill
+              className="object-cover object-left-top"
             />
-          ))}
-        </div>
-      )}
+            {/* {item.fade.includes("bottom") && (
+              <div className="from-background absolute inset-0 bg-linear-to-b via-transparent to-transparent" />
+            )} */}
+          </div>
+        )}
+      </div>
 
       {!isLast && (
         <>

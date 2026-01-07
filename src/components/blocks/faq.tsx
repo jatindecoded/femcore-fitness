@@ -10,37 +10,42 @@ import { cn } from "@/lib/utils";
 
 const categories = [
   {
-    title: "Support",
+    title: "Membership",
     questions: [
       {
-        question: "How do I update my account without breaking my laptop?",
+        question: "Is FemCORE Fitness only for women?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Yes! FemCORE is a female-only gym, designed exclusively for women of all ages and fitness levels.",
       },
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "How do I join FemCORE?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "You can sign up online or visit us at our Vikaspuri location. Our team will help you choose the best membership plan for your goals.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "Can I try a class before joining?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Absolutely! We offer free trial classes for new members. Contact us to book your spot.",
       },
     ],
   },
   {
-    title: "Your account",
+    title: "Facilities & Programs",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Are trainers at FemCORE female?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "Yes, all our trainers are certified female professionals dedicated to helping you achieve your fitness goals.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "What kind of classes do you offer?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "We offer a variety of group classes including yoga, strength training, Zumba, HIIT, and more—all designed for women.",
+      },
+      {
+        question: "Is the gym safe and private?",
+        answer:
+          "FemCORE is committed to providing a safe, secure, and private environment for all our members.",
       },
     ],
   },
@@ -48,14 +53,14 @@ const categories = [
     title: "Other questions",
     questions: [
       {
-        question: "Is support free, or do I need to Google everything?",
+        question: "Where is FemCORE located?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "We are located at A-123, Vikaspuri, New Delhi, 110018.",
       },
       {
-        question: "Are you going to be subsumed by AI?",
+        question: "How can I contact FemCORE?",
         answer:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptates deserunt officia temporibus dignissimos.",
+          "You can email us at info@femcore.in or call us at +91-9876543210.",
       },
     ],
   },

@@ -6,24 +6,24 @@
 @variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.92 0.04 86.47);
-  --primary-foreground: oklch(0.31 0.02 86.64);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --background: #fff8f0;
+  --foreground: #6B2C3B;
+  --card: #fff8f0;
+  --card-foreground: #6B2C3B;
+  --popover: #fff8f0;
+  --popover-foreground: #6B2C3B;
+  --primary: #6B2C3B;
+  --primary-foreground: #fff8f0;
+  --secondary: #C9A14A;
+  --secondary-foreground: #fff8f0;
+  --muted: #f5e6d8;
+  --muted-foreground: #6B2C3B;
+  --accent: #C9A14A;
+  --accent-foreground: #fff8f0;
+  --destructive: #b00020;
+  --border: #C9A14A;
+  --input: #C9A14A;
+  --ring: #C9A14A;
 
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -53,15 +53,16 @@
 
   --font-dm-sans: "dmSans", sans-serif;
   --font-inter: "inter", sans-serif;
+  --font-bricolage-grotesque: "Bricolage Grotesque", sans-serif;
 
-  --font-sans: var(--font-dm-sans), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
   /* StyleGlide provides a better abstraction for fonts */
-  --display-family: var(--font-sans);
-  --text-family: var(--font-inter);
-  --display-weight: 600;
+  --display-family: var(--font-bricolage-grotesque);
+  --text-family: var(--font-sans);
+  --display-weight: 800;
   --text-weight: 400;
 }
 
@@ -218,7 +219,7 @@
 @layer utilities {
   body,
   .font-text {
-    font-family: var(--font-text);
+    font-family: var(--font-sans);
     font-weight: var(--text-weight);
   }
   h1,
@@ -242,6 +243,7 @@
       "ss02" on,
       "ss03" on,
       "ss04" on; /* Enables the special `a` character and other characters for DM Sans */
+    letter-spacing: var(--tracking-tighter);
   }
   .font-mono {
     font-family: var(--font-mono), monospace;

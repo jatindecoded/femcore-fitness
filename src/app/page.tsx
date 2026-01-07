@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Background className="via-muted to-muted/80">
         <Hero />
-        <Logos />
+        {/* <Logos /> */}
         <Features />
         <ResourceAllocation />
       </Background>

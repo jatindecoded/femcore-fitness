@@ -6,10 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { ChevronRight, Github } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
-import { ThemeToggle } from "@/components/theme-toggle";
-import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -22,23 +20,28 @@ import { cn } from "@/lib/utils";
 
 const ITEMS = [
   {
-    label: "Features",
-    href: "#features",
+    label: "Programs",
+    href: "#programs",
     dropdownItems: [
       {
-        title: "Modern product teams",
+        title: "Women-Only Group Classes",
         href: "/#feature-modern-teams",
         description:
-          "Mainline is built on the habits that make the best product teams successful",
+          "Empowering group workouts for all fitness levels, led by female trainers.",
       },
       {
-        title: "Resource Allocation",
-        href: "/#resource-allocation",
-        description: "Mainline your resource allocation and execution",
+        title: "Personal Training",
+        href: "/#feature-personal-training",
+        description: "1-on-1 sessions with certified female experts.",
+      },
+      {
+        title: "Modern Facilities",
+        href: "/#feature-facilities",
+        description: "Safe, clean, and inspiring gym environment for women.",
       },
     ],
   },
-  { label: "About Us", href: "/about" },
+  { label: "About", href: "/about" },
   { label: "Pricing", href: "/pricing" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
@@ -52,23 +55,24 @@ export const Navbar = () => {
   return (
     <section
       className={cn(
-        "bg-background/70 absolute left-1/2 z-50 w-[min(90%,700px)] -translate-x-1/2 rounded-4xl border backdrop-blur-md transition-all duration-300",
+        "bg-background/70 absolute left-1/2 z-50 w-[min(90%,700px)] -translate-x-1/2 rounded-4xl backdrop-blur-md transition-all duration-300",
         "top-5 lg:top-12",
       )}
     >
-      <div className="flex items-center justify-between px-6 py-3">
+      <div className="flex items-center justify-between px-4 py-2">
         <Link href="/" className="flex shrink-0 items-center gap-2">
           <Image
-            src="/logo.svg"
-            alt="logo"
-            width={94}
-            height={18}
-            className="dark:invert"
+            src="/femcore-logo.png"
+            alt="FemCORE Fitness logo"
+            width={24}
+            height={24}
+            className="rounded-full size-8"
           />
+          <span className="font-extrabold text-lg text-primary font-display">FemCORE Fitness</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <NavigationMenu className="max-lg:hidden">
+        <NavigationMenu className="max-lg:hidden font-display font-medium">
           <NavigationMenuList>
             {ITEMS.map((link) =>
               link.dropdownItems ? (
@@ -86,10 +90,10 @@ export const Navbar = () => {
                               className="group hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground flex items-center gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors select-none"
                             >
                               <div className="space-y-1.5 transition-transform duration-300 group-hover:translate-x-1">
-                                <div className="text-sm leading-none font-medium">
+                                <div className="text-sm leading-none font-bold">
                                   {item.title}
                                 </div>
-                                <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">
+                                <p className="text-muted-foreground font-medium line-clamp-2 text-sm leading-snug">
                                   {item.description}
                                 </p>
                               </div>
@@ -117,23 +121,8 @@ export const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Auth Buttons */}
         <div className="flex items-center gap-2.5">
-          <ThemeToggle />
-          <Link href="/login" className="max-lg:hidden">
-            <Button variant="outline">
-              <span className="relative z-10">Login</span>
-            </Button>
-          </Link>
-          <a
-            href="https://github.com/shadcnblocks/mainline-nextjs-template"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Github className="size-4" />
-            <span className="sr-only">GitHub</span>
-          </a>
 
-          {/* Hamburger Menu Button (Mobile Only) */}
           <button
             className="text-muted-foreground relative flex size-8 lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -160,7 +149,7 @@ export const Navbar = () => {
       {/*  Mobile Menu Navigation */}
       <div
         className={cn(
-          "bg-background fixed inset-x-0 top-[calc(100%+1rem)] flex flex-col rounded-2xl border p-6 transition-all duration-300 ease-in-out lg:hidden",
+          "bg-background fixed inset-x-0 top-[calc(100%+1rem)] flex flex-col rounded-2xl border p-6 transition-all duration-300 ease-in-out lg:hidden font-display",
           isMenuOpen
             ? "visible translate-y-0 opacity-100"
             : "invisible -translate-y-4 opacity-0",

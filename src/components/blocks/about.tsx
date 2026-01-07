@@ -11,23 +11,19 @@ const About = () => {
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <ImageSection
           images={[
-            { src: "/about/1.webp", alt: "Team collaboration" },
-            { src: "/about/2.webp", alt: "Team workspace" },
+            { src: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=400&q=80", alt: "Women working out together" },
+            { src: "https://images.unsplash.com/photo-1517960413843-0aee8e2d471c?auto=format&fit=crop&w=400&q=80", alt: "Female trainer guiding member" },
           ]}
           className="xl:-translate-x-10"
         />
 
         <TextSection
-          title="The team"
+          title="Our Story"
           paragraphs={[
-            "We started building Mainline in 2019 and launched in 2022. Every endpoint has been designed from the ground up — with no technical debt or legacy systems. We are purpose-built to power project management innovation for the next hundred years.",
-            "We are 100% founder and team-owned, profitable, and we keep our team lean. Over time, this page will become more polished, but for now, we're focused on delivering for developers.",
-            "If you're interested in building the future of PM, check out our open roles below.",
+            "FemCORE was founded to create a safe, empowering space for women in Vikaspuri, New Delhi. We believe fitness is more than just physical strength—it's about building confidence, community, and lifelong wellness.",
+            "Our team of certified female trainers is passionate about helping every member achieve her unique goals, whether it's strength, flexibility, or overall well-being.",
+            "Join us and become part of a supportive sisterhood that celebrates every milestone, big or small!",
           ]}
-          ctaButton={{
-            href: "/careers",
-            text: "View open roles",
-          }}
         />
       </div>
 
@@ -35,14 +31,15 @@ const About = () => {
       <div className="flex flex-col gap-8 lg:gap-16 xl:gap-20">
         <TextSection
           paragraphs={[
-            "At Mainline, we are dedicated to transforming the way teams plan, execute, and deliver projects. Our mission is to provide our customers with an unbeatable edge over delays, inefficiencies, and disorganisation through actionable insights and seamless collaboration. We'll stop at nothing to give you the tools you need to get every project across the finish line.",
-            "We're customer-obsessed — investing the time to understand every aspect of your workflow so that we can help you operate better than ever before. We're all in this together because your success is our success. In our history as a company, we've never lost a customer, because when your projects succeed, so do we.",
+            "At FemCORE, we are committed to providing a modern, safe, and inspiring environment for women to thrive. Our mission is to empower every woman to discover her true strength, both inside and out.",
+            "We offer a variety of women-only classes, personal training, and wellness programs—all designed to fit your lifestyle and needs.",
+            "Experience the difference of a gym built for women, by women, right here in Vikaspuri!",
           ]}
         />
         <ImageSection
           images={[
-            { src: "/about/3.webp", alt: "Modern workspace" },
-            { src: "/about/4.webp", alt: "Team collaboration" },
+            { src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80", alt: "Women stretching together" },
+            { src: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80", alt: "Group fitness class for women" },
           ]}
           className="hidden lg:flex xl:translate-x-10"
         />
