@@ -1,5 +1,4 @@
 import { Bricolage_Grotesque, Inter } from "next/font/google";
-import localFont from "next/font/local";
 
 import type { Metadata } from "next";
 
